@@ -1,0 +1,70 @@
+1. Verdant Veggie Delight
+Description: Our Verdant Veggie Delight is a feast for both the eyes and the palate. This dish features a carefully selected assortment of seasonal vegetables, including bell peppers, zucchini, cherry tomatoes, and carrots, all roasted to a perfect caramelization. The vegetables are drizzled with a tangy balsamic glaze that adds a hint of sweetness and acidity. Finished with a sprinkle of freshly chopped basil and parsley, this dish not only looks beautiful but also offers a delightful burst of flavors in every bite. Ideal for those seeking a wholesome and satisfying vegetarian option.
+
+Price: $12.99
+
+
+2. Citrus Grilled Salmon
+Description: Indulge in the bright and refreshing flavors of our Citrus Grilled Salmon. This dish features a succulent salmon fillet, marinated in a vibrant blend of citrus juices, including lemon, lime, and orange, infused with garlic and fresh herbs. The salmon is expertly grilled to achieve a crispy, slightly charred exterior while maintaining a moist and tender interior. Accompanied by a bed of herb-infused quinoa, which provides a light yet hearty base, and steamed asparagus spears that add a touch of freshness and crunch. This dish is perfect for those who enjoy a healthy yet flavorful meal.
+
+
+Price: $19.99
+
+
+3. Truffle Mushroom Risotto
+Description: Experience the luxurious taste of our Truffle Mushroom Risotto. This decadent dish begins with creamy Arborio rice, slowly cooked in a rich, savory truffle mushroom broth to create a velvety texture. The risotto is adorned with a generous helping of sautéed wild mushrooms, including shiitake, cremini, and portobello, which impart earthy flavors and a satisfying chew. The dish is finished with a generous shaving of Parmesan cheese and a drizzle of aromatic truffle oil, enhancing its depth and complexity. This risotto is a perfect choice for those who appreciate gourmet cuisine with a touch of sophistication.
+
+
+Price: $16.49
+
+
+4. Spicy BBQ Ribs
+Description: Our Spicy BBQ Ribs are a mouthwatering treat for BBQ enthusiasts. We start with tender pork ribs that are slow-cooked for hours to achieve the perfect balance of tenderness and flavor. The ribs are then generously coated with our house-made spicy BBQ sauce, which combines smoky, tangy, and spicy elements to create a flavor explosion. Served with a side of creamy coleslaw that offers a cool contrast to the spiciness of the ribs, and crispy sweet potato fries that provide a satisfying crunch. This dish is ideal for those who love a hearty, flavorful meal with a bit of heat.
+
+
+Price: $22.99
+
+
+5. Classic Margherita Pizza
+Description: Enjoy the timeless simplicity of our Classic Margherita Pizza. This dish features a perfectly baked thin crust topped with a layer of rich tomato sauce made from ripe, juicy tomatoes and seasoned with garlic and basil. The pizza is generously covered with fresh, creamy mozzarella cheese that melts to perfection and creates a gooey, savory layer. Finished with a sprinkle of fresh basil leaves and a drizzle of extra virgin olive oil, this pizza offers a harmonious blend of flavors that celebrates the essence of Italian cuisine. Ideal for those who appreciate classic, uncomplicated dishes with high-quality ingredients.
+
+
+Price: $14.99
+
+
+6. Mediterranean Mezze Platter
+Description: Dive into a vibrant assortment of Mediterranean flavors with our Mezze Platter. This generous platter includes a variety of house-made dips such as creamy hummus, tangy tzatziki, and spicy baba ganoush, served alongside warm, fluffy pita bread. Complementing the dips are a selection of marinated olives, crisp cucumber slices, juicy cherry tomatoes, and crunchy pickled vegetables. A sprinkling of feta cheese and a drizzle of extra virgin olive oil tie the platter together. Ideal for sharing or for a solo indulgence in fresh, flavorful, and healthy Mediterranean cuisine.
+
+
+Price: $14.49
+
+
+7. Thai Red Curry Chicken
+Description: Our Thai Red Curry Chicken offers a tantalizing mix of spicy and sweet flavors. This dish features tender chunks of chicken simmered in a fragrant red curry sauce made from red chilies, lemongrass, and coconut milk. The curry is enriched with a mix of vegetables including bell peppers, bamboo shoots, and carrots, which absorb the curry’s rich flavors. Served over a bed of jasmine rice and garnished with fresh basil and cilantro, this dish provides a harmonious balance of heat and sweetness, making it a satisfying option for those who enjoy a touch of exotic spice in their meal.
+
+
+Price: $17.99
+
+
+8. Blackened Shrimp Tacos
+Description: Savor the bold flavors of our Blackened Shrimp Tacos, featuring succulent shrimp seasoned with a spicy blackening rub and seared to perfection. Each taco is filled with the blackened shrimp, topped with a crunchy slaw of shredded cabbage, carrots, and red onions, and drizzled with a zesty lime crema. Finished with a sprinkle of fresh cilantro and a wedge of lime, these tacos offer a delightful contrast of spicy, tangy, and crunchy elements. Served with a side of cilantro-lime rice and black beans for a complete and satisfying meal.
+
+
+Price: $15.49
+
+
+9. Beef Wellington
+Description: Experience the elegance of our Beef Wellington, a true classic of fine dining. This dish features a tender beef fillet coated in a layer of savory mushroom duxelles and wrapped in a buttery puff pastry. The Wellington is baked to a golden brown, with the pastry providing a crisp exterior and the beef remaining juicy and succulent. Served with a rich red wine reduction sauce and accompanied by creamy mashed potatoes and seasonal roasted vegetables, this dish is perfect for special occasions or for those seeking a luxurious and memorable dining experience.
+
+
+Price: $29.99
+
+
+10. Chocolate Lava Cake
+Description: Indulge in the ultimate chocolate lover’s dream with our Chocolate Lava Cake. This decadent dessert features a rich, molten chocolate center encased in a delicate chocolate cake. When cut, the warm, gooey chocolate flows out, creating a deliciously decadent experience. The cake is served with a scoop of vanilla bean ice cream and a drizzle of raspberry coulis, adding a refreshing contrast to the rich chocolate. Garnished with a sprig of mint and a dusting of powdered sugar, this dessert is the perfect way to end your meal on a sweet note.
+
+
+Price: $8.99
+
+
+
