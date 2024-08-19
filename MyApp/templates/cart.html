@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %} <!-- Load the static template tag -->
+{% block title %}
+Your Cart - Verdant Table
+{% endblock %}
+
+{% block content %}
+<div class="bg-gray-100 mt-10 md:mt-20 rounded-xl">
+    <div class="container bg-green-400 mx-auto py-6 px-4 md:py-10 md:px-6 rounded-xl bg-opacity-50">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6 text-center">Your Cart</h2>
+        <div class="bg-white rounded-lg shadow-md p-4 md:p-6">
+            {% if cart %}
+                <ul id="cart-items" class="divide-y divide-gray-200">
+                    {% for item in cart.values %}
+                        <li class="py-4 md:py-6 flex items-center transition-transform transform hover:scale-95 ease-in-out duration-300" data-quantity="{{ item.quantity }}" data-price="{{ item.price }}">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="w-12 h-12 md:w-16 md:h-16 rounded-lg shadow-md mr-4">
+                            <div class="flex-grow">
+                                <h3 class="text-lg md:text-xl font-semibold text-gray-800">{{ item.name }}</h3>
+                                <p class="text-gray-600">Quantity: {{ item.quantity }}</p>
+                                <p class="text-green-600 font-bold">Price: ${{ item.price }}</p>
+                            </div>
+                            <p class="text-green-600 font-bold total-item-price">$0.00</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="text-right mt-4 md:mt-6">
+                    <p id="total-price" class="text-xl md:text-2xl font-bold">Total Price: $0.00</p>
+                    <a href="#" class="bg-green-500 text-white px-4 py-2 rounded-lg mt-4 inline-block hover:bg-green-600">Proceed to Checkout</a>
+                </div>
+            {% else %}
+                <p class="text-gray-600 text-center">Your cart is empty.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Background Image for Full Page */
+    body {
+        background-image: url('{% static "bg-cartPage.jpg" %}');
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-color: #f3f4f6;
+    }
+    
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let totalPrice = 0;
+        const cartItems = document.querySelectorAll('#cart-items li');
+
+        cartItems.forEach(item => {
+            const quantity = parseInt(item.getAttribute('data-quantity'), 10);
+            const price = parseFloat(item.getAttribute('data-price'));
+            const totalItemPrice = quantity * price;
+
+            item.querySelector('.total-item-price').textContent = `$${totalItemPrice.toFixed(2)}`;
+            totalPrice += totalItemPrice;
+        });
+
+        document.getElementById('total-price').textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+    });
+</script>
+{% endblock %}

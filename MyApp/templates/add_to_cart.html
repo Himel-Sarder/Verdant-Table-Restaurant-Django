@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %} <!-- Load the static template tag -->
+{% block title %}
+Add to Cart - Verdant Table
+{% endblock %}
+
+{% block content %}
+<div class="bg-gray-100 min-h-screen bg-opacity-0">
+    <div class="container mx-auto py-10 mt-20">
+        <div class="flex justify-center">
+            <div class="w-full max-w-md bg-green-200 rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Add to Cart</h2>
+                <div class="text-center mb-4">
+                    <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-1/2 h-auto mx-auto rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mt-4">{{ item.name }}</h3>
+                    <p class="text-green-600 font-bold text-xl">Price: ${{ item.price }}</p>
+                </div>
+                <form method="POST" action="{% url 'add_to_cart' item.id %}">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label for="quantity" class="block text-gray-700 text-sm font-bold mb-2">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">Add to Cart</button>
+                        <a href="{% url 'menu' %}" class="text-green-500 hover:underline">Back to Menu</a>
+                    </div>
+                </form>
+                {% if message %}
+                    <p class="text-green-800 mt-4 text-center">{{ message }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Background Image for Full Page */
+    body {
+        background-image: url('{% static "bg-addto.jpeg" %}');
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-color: #f3f4f6;
+    }
+</style>
+{% endblock %}

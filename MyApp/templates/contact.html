@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% load static %} <!-- Load static files -->
+
+{% block title %}
+Contact Us - Verdant Table
+{% endblock %}
+
+{% block content %}
+    <!-- Contact Section -->
+    <main class="container mx-auto p-6 bg-green-50 bg-opacity-80 rounded-lg shadow-lg mt-20">
+        <h1 class="text-4xl font-bold text-gray-800 flex justify-center text-center">Contact Us</h1><br>
+        <p class="text-gray-600 mt-4 flex justify-center text-center">
+            <strong>We would love to hear from you! Whether you have a question about our menu, want to book a table, or just want to share your experience, feel free to reach out to us.</strong>
+        </p>
+        <div class="mt-6 flex flex-col items-center space-y-4">
+            <p class="text-center"><strong>Email</strong><br> info@VerdantTable.com</p>
+            <p class="text-center"><strong>Phone</strong><br> +1 123-456-7890</p>
+            <p class="text-center"><strong>Address</strong><br> 123 York St, Food City, FC 12345</p>
+        </div>
+
+        <br>
+        <br>
+        <p class="flex justify-center text-center text-2xl"><strong>Our Team Members</strong></p>
+
+        <!-- Flip Card Section -->
+
+        <!-- General Manager (GM) Section -->
+        <div class="mt-10 flex justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 h-80 bg-green-50 shadow-lg rounded overflow-hidden perspective custom-green-shadow">
+                <div class="relative w-full h-full transform-style-preserve-3d duration-700 flip-card-inner">
+                    <!-- Front Side -->
+                    <div class="absolute w-full h-full bg-green-100 backface-hidden flex flex-col items-center justify-center p-4">
+                        <p class="text-lg font-bold text-gray-700 mb-4 flex text-center">General Manager (GM)<br>Verdant Table</p>
+                        <img src="{% static 'GM.jpeg' %}" alt="General Manager (GM) Photo" class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-cover rounded-full">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute w-full h-full bg-green-700 text-white backface-hidden transform rotate-y-180 flex items-center justify-center p-4">
+                        <p class="text-center">
+                            <strong>Name:<br></strong> David Alexander Carter
+                            <strong><br>Email:<br></strong> info@gm.verdant.com
+                            <strong><br>Phone:<br></strong> +1 123-456-7891
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assistant Manager Section -->
+        <div class="mt-10 flex justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 h-80 bg-green-50 shadow-lg rounded overflow-hidden perspective custom-green-shadow">
+                <div class="relative w-full h-full transform-style-preserve-3d duration-700 flip-card-inner">
+                    <!-- Front Side -->
+                    <div class="absolute w-full h-full bg-green-100 backface-hidden flex flex-col items-center justify-center p-4">
+                        <p class="text-lg font-bold text-gray-700 mb-4 flex text-center">Assistant Manager<br>Verdant Table</p>
+                        <img src="{% static 'AM.jpeg' %}" alt="Assistant Manager Photo" class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-cover rounded-full">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute w-full h-full bg-green-700 text-white backface-hidden transform rotate-y-180 flex items-center justify-center p-4">
+                        <p class="text-center">
+                            <strong>Name:<br></strong> Michael Jameson Brooks
+                            <strong><br>Email:<br></strong> info@gm.verdant.com
+                            <strong><br>Phone:<br></strong> +1 123-456-7892
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HR Manager Section -->
+        <div class="mt-10 flex justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 h-80 bg-green-50 shadow-lg rounded overflow-hidden perspective custom-green-shadow">
+                <div class="relative w-full h-full transform-style-preserve-3d duration-700 flip-card-inner">
+                    <!-- Front Side -->
+                    <div class="absolute w-full h-full bg-green-100 backface-hidden flex flex-col items-center justify-center p-4">
+                        <p class="text-lg font-bold text-gray-700 mb-4 flex text-center">HR Manager<br>Verdant Table</p>
+                        <img src="{% static 'HR.jpeg' %}" alt="HR Manager Photo" class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-cover rounded-full">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute w-full h-full bg-green-700 text-white backface-hidden transform rotate-y-180 flex items-center justify-center p-4">
+                        <p class="text-center">
+                            <strong>Name:<br></strong> Christopher Alan Reed
+                            <strong><br>Email:<br></strong> info@hr.verdant.com
+                            <strong><br>Phone:<br></strong> +1 123-456-7893
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accountant Section -->
+        <div class="mt-10 flex justify-center">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 h-80 bg-green-50 shadow-lg rounded overflow-hidden perspective custom-green-shadow">
+                <div class="relative w-full h-full transform-style-preserve-3d duration-700 flip-card-inner">
+                    <!-- Front Side -->
+                    <div class="absolute w-full h-full bg-green-100 backface-hidden flex flex-col items-center justify-center p-4">
+                        <p class="text-lg font-bold text-gray-700 mb-4 flex text-center">Accountant<br>Verdant Table</p>
+                        <img src="{% static 'AC.jpeg' %}" alt="Assistant Manager Photo" class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-cover rounded-full">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute w-full h-full bg-green-700 text-white backface-hidden transform rotate-y-180 flex items-center justify-center p-4">
+                        <p class="text-center">
+                            <strong>Name:<br></strong> Samuel Anthony Grant
+                            <strong><br>Email:<br></strong> info@ac.verdant.com
+                            <strong><br>Phone:<br></strong> +1 123-456-7894
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <p class="flex justify-center text-center text-2xl"><strong>Feedback</strong></p>
+        <!-- Contact Form -->
+        <form class="mt-4 flex flex-col items-center">
+            <!-- Form fields go here -->
+            <div class="mb-4 w-full max-w-md">
+                <label for="name" class="block text-gray-700 shadow-green-600">Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-4 w-full max-w-md">
+                <label for="email" class="block text-gray-700">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-4 w-full max-w-md">
+                <label for="message" class="block text-gray-700">Message:</label>
+                <textarea id="message" name="message" class="w-full px-3 py-2 border rounded"></textarea>
+            </div>
+            
+            <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300">Submit</button>
+        </form>
+
+        <!-- Embedded Google Map -->
+        <div class="mt-10 flex justify-center border-black">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509429!2d144.9537363153183!3d-37.81627927975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0f1fd81%3A0x5045675218ced40!2zU291dGJiYW5rLCBWSUMgMzAwMCwg0JDQstGC0L7RgNGP!5e0!3m2!1sen!2sus!4v1626514089425!5m2!1sen!2sus"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+
+    </main>
+
+    <!-- Add Flip Card Styles -->
+    <style>
+        /* Background Image for Full Page */
+        body {
+            background-image: url('{% static "bg-contactPage.jpg" %}');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            background-repeat: no-repeat;
+            background-color: #f3f4f6; /* Fallback color */
+        }
+
+        .perspective {
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+            transform-style: preserve-3d;
+        }
+        .flip-card-inner:hover {
+            transform: rotateY(180deg);
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+
+        .custom-green-shadow {
+            box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.5);
+        }
+
+        /* Ensure Content Background is Distinguishable */
+        .bg-white.bg-opacity-80 {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Button Styling */
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #34d399; /* Slightly lighter green */
+            transform: scale(1.05);
+        }
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5);
+        }
+    </style>
+{% endblock %}

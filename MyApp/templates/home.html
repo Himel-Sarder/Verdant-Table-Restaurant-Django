@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+
+{% load static %} <!-- Load the static template tag -->
+
+{% block title %}
+Home - Verdant Table
+{% endblock %}
+
+{% block content %}
+<body class="bg-gray-50 text-gray-900 h-screen overflow-hidden">
+    <!-- Advertisement Section -->
+    <div id="advertisement" class="fixed inset-0 bg-gray-800 bg-opacity-80 flex items-center justify-center z-50">
+        <div class="relative bg-white p-2 rounded-lg shadow-lg max-w-xl">
+            <button id="close-ad" class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">❌</button>
+            <img src="{% static 'add.png' %}" alt="Advertisement" class="w-full h-auto rounded-lg">
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen rounded-lg shadow-lg mt-20" style="background-image: url('{% static 'home-ex.jpg' %}');">
+        <div class="container mx-auto h-full flex items-center justify-center text-center px-4 md:px-0">
+            <div class="bg-white bg-opacity-75 p-6 md:p-10 rounded-lg">
+                <h1 class="text-3xl md:text-5xl font-bold text-green-600">Welcome to Verdant Table</h1>
+                <p class="text-lg md:text-xl text-gray-700 mt-4">Experience the best dishes made with love and fresh ingredients.</p>
+                <a href="{% url 'menu' %}" class="bg-green-600 text-white px-4 md:px-6 py-2 mt-6 inline-block rounded">Explore Our Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Dish Section -->
+    <section class="bg-white m-10 md:p-10 bg-opacity-0 rounded-lg relative" style="background-image: url('{% static 'dish4.png' %}'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- Text Section -->
+            <div class="bg-green-600 text-white p-4 rounded-lg mr-40">
+                <h2 class="text-2xl font-bold">Featured Dish</h2>
+                <p class="mt-2">Our special dish for the day is served with love and care, making sure you get the best experience. Don't miss out! </p>
+            </div>
+            
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2 p-8 flex justify-center">
+                <img src="{% static 'dish.png' %}" alt="Featured Dish" class="rounded-lg max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="py-12 flex justify-center items-center">
+        <div class="container2 mx-auto">
+            <div class="wrapper">
+                <img src="{% static 'Image-4.jpg' %}" alt="Description of Uploaded Image">
+                <img src="{% static 'Image-1.jpg' %}" alt="Description of Image 1">
+                <img src="{% static 'Image-2.jpg' %}" alt="Description of Image 2">
+                <img src="{% static 'Image-3.jpg' %}" alt="Description of Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="bg-green-500 py-12 px-14 bg-opacity-60 rounded-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white">What Our Customers Say</h2>
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="{% static 'customer1.jpeg' %}" alt="Emily R." class="w-16 h-16 rounded-full mb-4">
+                    <div class="flex mb-4">
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <p class="text-lg italic text-gray-700">"The best dining experience I've ever had! The food was exquisite, and the atmosphere was perfect."</p>
+                    <p class="mt-4 text-green-600 font-bold">- Emily R.</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="{% static 'customer2.jpeg' %}" alt="James W." class="w-16 h-16 rounded-full mb-4">
+                    <div class="flex mb-4">
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <p class="text-lg italic text-gray-700">"Amazing service and delicious dishes! Highly recommend Verdant Table to everyone."</p>
+                    <p class="mt-4 text-green-600 font-bold">- James W.</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+                    <img src="{% static 'customer3.jpg' %}" alt="Sarah M." class="w-16 h-16 rounded-full mb-4">
+                    <div class="flex mb-4">
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <p class="text-lg italic text-gray-700">"The ambiance is so cozy, and the food is beyond amazing. I can't wait to come back!"</p>
+                    <p class="mt-4 text-green-600 font-bold">- Sarah M.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- GIF Section -->
+    <div class="mt-12 p-4 sm:p-8 lg:p-12 flex justify-center">
+        <img src="{% static 'gip.gif' %}" alt="Fun GIF" class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 h-auto border-4 border-green-600 p-2 rounded-lg shadow-lg">
+    </div>
+
+
+    <!-- Reserve a Table Form with Glassmorphism -->
+    <section class="mt-12 p-8 bg-gradient-to-r from-green-500 to-green-600 rounded-lg shadow-lg">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8 animate-bounce">Reserve a Table</h2>
+            <form action="#" method="POST" class="bg-white bg-opacity-20 backdrop-blur-md p-8 md:p-10 rounded-lg shadow-md animate-slideUp border border-opacity-50 border-white">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Name Field -->
+                    <div class="animate-pulse">
+                        <label for="name" class="block text-white font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-4 bg-white bg-opacity-30 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Name" required>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="animate-pulse">
+                        <label for="email" class="block text-white font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-4 bg-white bg-opacity-30 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <!-- Phone Field -->
+                <div class="mt-6 animate-pulse">
+                    <label for="phone" class="block text-white font-semibold mb-2">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-4 bg-white bg-opacity-30 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Your Phone Number" required>
+                </div>
+                <!-- Date & Time Fields -->
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="animate-pulse">
+                        <label for="date" class="block text-white font-semibold mb-2">Date</label>
+                        <input type="date" id="date" name="date" class="w-full p-4 bg-white bg-opacity-30 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div class="animate-pulse">
+                        <label for="time" class="block text-white font-semibold mb-2">Time</label>
+                        <input type="time" id="time" name="time" class="w-full p-4 bg-white bg-opacity-30 text-black border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                </div>
+                <!-- Guests Field -->
+                <div class="mt-6 animate-pulse">
+                    <label for="guests" class="block text-white font-semibold mb-2">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" class="w-full p-4 bg-white bg-opacity-30 text-gray-900 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Number of Guests" min="1" required>
+                </div>
+                <!-- Submit Button -->
+                <div class="mt-8 text-center">
+                    <button type="submit" class="bg-white bg-opacity-30 backdrop-blur-md text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:bg-opacity-40 focus:outline-none focus:ring-4 focus:ring-green-500 transform transition duration-300 hover:scale-105 border border-white border-opacity-50">Reserve Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <style>
+        /* Background Image for Full Page */
+        body {
+            background-image: url('{% static "bg-homePage4.jpg" %}');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            background-color: #f3f4f6;
+        }
+
+        /* Image Slider */
+        .container2 {
+            width: 95vmin;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 10px solid #00ab66;
+            border-radius: 8px;
+            box-shadow: 10px 25px 30px;
+        }
+        .wrapper {
+            display: flex;
+            animation: slide 12s infinite;
+        }
+        @keyframes slide {
+            0%, 25% {
+                transform: translateX(0);
+            }
+            30%, 55% {
+                transform: translateX(-100%);
+            }
+            60%, 85% {
+                transform: translateX(-200%);
+            }
+            90%, 100% {
+                transform: translateX(0);
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out;
+        }
+        .animate-slideUp {
+            animation: slideUp 0.7s ease-out;
+        }
+        /* Additional Padding to Account for Fixed Navbar */
+    </style>
+
+    <script>
+        // JavaScript to handle advertisement close button
+        document.getElementById('close-ad').addEventListener('click', function() {
+            document.getElementById('advertisement').style.display = 'none';
+        });
+    </script>
+</body>
+{% endblock %}

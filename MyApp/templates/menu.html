@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+Menu - Verdant Table
+{% endblock %}
+
+{% block content %}
+    <!-- Menu Items -->
+    <main class="container mx-auto p-6 mt-20">
+        <h1 class="text-4xl font-bold text-white mb-6 border-b-2 border-white pb-2">Menu</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for item in items %}
+            <div class="bg-green-100 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+                <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-full h-48 object-cover transition-transform transform hover:scale-110">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ item.name }}</h2>
+                    <p class="text-gray-600 text-lg mb-4">${{ item.price }}</p>
+                    <a href="{% url 'menu_item' item.pk %}" class="text-green-600 hover:text-green-800 font-semibold">View Details</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <style>
+        /* Background Image for Full Page */
+        body {
+            background-image: url("{% static 'bg-menuPage.jpg' %}");
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            background-color: #f3f4f6;
+        }
+    </style>
+{% endblock %}

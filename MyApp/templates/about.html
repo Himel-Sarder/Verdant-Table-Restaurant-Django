@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+About Us - Verdant Table
+{% endblock %}
+
+{% block content %}
+    <!-- About Section -->
+    <main class="container mx-auto p-6 bg-green-200 bg-opacity-80 rounded-lg shadow-lg mt-20"> 
+        <h1 class="text-4xl font-bold text-gray-800">About Us</h1>
+        <h2 class="text-2xl font-bold text-gray-700 mt-4"><strong>Verdant Table: A Fresh Tradition</strong></h2>
+        <p class="text-gray-600 mt-4">
+            Founded in 2022 by Himel Sarder, Verdant Table began as a dream rooted in a passion for wholesome, farm-to-table dining. Inspired by the lush green landscapes of his childhood and his love for sustainable, healthy eating, Himel envisioned a place where fresh ingredients and community spirit could come together to create an unforgettable dining experience.
+        </p>
+        <p class="text-gray-600 mt-4">
+            The name "Verdant Table" reflects the restaurant's commitment to green practices and vibrant, flavorful cuisine. From the beginning, Himel's goal was to offer dishes that were not only delicious but also sourced from local farms and growers, ensuring the highest quality and sustainability.
+        </p>
+        <p class="text-gray-600 mt-4">
+            The restaurant opened its doors in a charming, restored historic building in the heart of the city. With its eco-friendly design and rustic decor, Verdant Table quickly became a local favorite, renowned for its inviting atmosphere and delectable menu. The restaurant's signature dishes include garden-fresh salads, artisanal breads, and a variety of vegetarian and vegan options that showcase the rich bounty of the region's produce.
+        </p>
+        <p class="text-gray-600 mt-4">
+            Himel Sarder's dedication to community involvement and environmental stewardship has been a cornerstone of Verdant Table's success. The restaurant regularly hosts farm-to-table dinners, cooking classes, and sustainability workshops, fostering a deep connection with its patrons and promoting a greener lifestyle.
+        </p>
+        <p class="text-gray-600 mt-4">
+            Today, Verdant Table continues to thrive as a beloved destination for those seeking a taste of nature's finest offerings, all while supporting local agriculture and sustainability. Under Himel's leadership, the restaurant remains a testament to the beauty of fresh, conscientious dining and the power of community.
+        </p>
+    </main>
+
+    <style>
+        /* Background Image for Full Page */
+        body {
+            background-image: url('{% static "bg-aboutPage.jpg" %}');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat;
+            background-color: #f3f4f6;
+        }
+
+    </style>
+{% endblock %}
