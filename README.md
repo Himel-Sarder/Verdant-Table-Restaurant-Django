@@ -2,6 +2,19 @@
 
 Welcome to **Verdant Table**, a modern and visually stunning restaurant website designed to provide a seamless and enjoyable experience for both restaurant owners and customers. This project leverages the power of Django for the backend and Tailwind CSS for the frontend, delivering a responsive and dynamic site that's easy to navigate.
 
+## Photos and Videos
+https://github.com/user-attachments/assets/db605c6b-606b-4a1e-8449-2db48a7e1581
+
+https://github.com/user-attachments/assets/859e7505-63e5-4d74-91a4-0d5d995ce5a6
+
+![image](https://github.com/user-attachments/assets/723cfd38-e513-4eaa-a1c9-ec307d9d4d44)
+
+https://github.com/user-attachments/assets/21461ee9-5bc0-40f6-9c87-f272fbf017bc
+
+![image](https://github.com/user-attachments/assets/d199bec5-f80e-48a3-96aa-cb43b36c1f4e)
+
+
+
 ## Project Overview
 
 **Verdant Table** aims to enhance the online presence of any restaurant by offering:
