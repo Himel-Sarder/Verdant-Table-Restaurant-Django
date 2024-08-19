@@ -49,37 +49,29 @@ Before you begin, ensure you have the following installed:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/himel-sarder/verdant-table.git
-   cd verdant-table
+   git clone https://github.com/Himel-Sarder/Verdant-Table-Restaurant-Django.git
    ```
 
 2. **Set Up a Virtual Environment**:
 
    ```bash
-   python -m venv venv
+   python -m venv my-env
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Install Required Packages**:
-
-   ```bash
-   pip install -r requirements.txt
-   npm install
-   ```
-
-4. **Apply Database Migrations**:
+3. **Apply Database Migrations**:
 
    ```bash
    python manage.py migrate
    ```
 
-5. **Run the Development Server**:
+4. **Run the Development Server**:
 
    ```bash
    python manage.py runserver
    ```
 
-6. **Visit the Website**:
+5. **Visit the Website**:
 
    Open your browser and navigate to `http://127.0.0.1:8000/` to view the website.
 
@@ -90,7 +82,6 @@ Before you begin, ensure you have the following installed:
 - **Scalable Architecture**: Built on Django, the project is ready for expansion with additional features or database integrations.
 - **User-Friendly Interface**: Designed with the user in mind, ensuring easy navigation and access to all site features.
 
-
 ## How to Contribute
 
 Contributions are welcome and appreciated! Whether it's a bug fix, new feature, or improvement, feel free to fork the repository and submit a pull request.
@@ -99,3 +90,7 @@ Contributions are welcome and appreciated! Whether it's a bug fix, new feature, 
 
 This project is open-source and available under the MIT License. For more details, see the [LICENSE](LICENSE) file.
 
+## Credit      
+Himel Sarder      
+Dept. of Computer Science and Technology, BSFMSTU      
+Email : info.himelcse@gmail.com
